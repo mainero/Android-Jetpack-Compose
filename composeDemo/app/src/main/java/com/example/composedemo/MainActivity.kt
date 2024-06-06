@@ -52,7 +52,7 @@ fun DemoScreen() {
         modifier = Modifier.fillMaxSize()
     ) {
 
-        DemoText(message = "Welcome to Compose 1.5", fontSize = sliderPosition)
+        DemoText(message = "Android Compose 1.5", fontSize = sliderPosition)
         Spacer(modifier = Modifier.height(150.dp))
         DemoSlider(
             sliderPosition = sliderPosition,
@@ -77,7 +77,7 @@ fun DemoText(message: String, fontSize: Float) {
 fun DemoSlider(sliderPosition: Float, onPositionChange: (Float) -> Unit) {
     Slider(
         modifier = Modifier.padding(10.dp),
-        valueRange = 20f..30f,
+        valueRange = 20f..25f,
         value = sliderPosition,
         onValueChange = { onPositionChange(it)}
     )
